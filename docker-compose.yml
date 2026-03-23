@@ -1,0 +1,220 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: etl_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks:
+      - etl_net
+
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: etl_pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
+    ports:
+      - "8085:80"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - etl_net
+
+  mongodb:
+    image: mongo:7
+    container_name: etl_mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - etl_net
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: etl_mongo_express
+    restart: unless-stopped
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      ME_CONFIG_MONGODB_URL: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongodb:27017/
+      ME_CONFIG_BASICAUTH: "false"
+    ports:
+      - "8082:8081"
+    depends_on:
+      - mongodb
+    networks:
+      - etl_net
+
+  nifi:
+      build:
+        context: ./nifi
+        dockerfile: Dockerfile
+      container_name: etl_nifi
+      restart: unless-stopped
+      environment:
+        SINGLE_USER_CREDENTIALS_USERNAME: ${NIFI_USER}
+        SINGLE_USER_CREDENTIALS_PASSWORD: ${NIFI_PASSWORD}
+        NIFI_WEB_HTTPS_PORT: 8443
+      ports:
+        - "8443:8443"
+      volumes:
+        - nifi_state:/opt/nifi/nifi-current/state
+        - nifi_conf:/opt/nifi/nifi-current/conf
+        - nifi_content:/opt/nifi/nifi-current/content_repository
+        - nifi_db:/opt/nifi/nifi-current/database_repository
+        - nifi_flowfile:/opt/nifi/nifi-current/flowfile_repository
+        - ./data/in:/data/in
+        - ./data/out:/data/out
+      depends_on:
+        postgres:
+          condition: service_healthy
+      networks:
+        - etl_net
+
+  airflow-init:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: etl_airflow_init
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW_UID: "50000"
+      _AIRFLOW_WWW_USER_USERNAME: ${AIRFLOW_USER}
+      _AIRFLOW_WWW_USER_PASSWORD: ${AIRFLOW_PASSWORD}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate && \
+        airflow users create \
+          --username ${AIRFLOW_USER} \
+          --password ${AIRFLOW_PASSWORD} \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@local.com || true
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./data/in:/opt/airflow/data/in
+      - ./data/out:/opt/airflow/data/out
+    networks:
+      - etl_net
+
+  airflow-webserver:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: etl_airflow_webserver
+    restart: unless-stopped
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW_UID: "50000"
+      AIRFLOW__WEBSERVER__SECRET_KEY: changeme_secret_key
+    command: webserver
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./data/in:/opt/airflow/data/in
+      - ./data/out:/opt/airflow/data/out
+    networks:
+      - etl_net
+
+  airflow-scheduler:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: etl_airflow_scheduler
+    restart: unless-stopped
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW_UID: "50000"
+    command: scheduler
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./data/in:/opt/airflow/data/in
+      - ./data/out:/opt/airflow/data/out
+    networks:
+      - etl_net
+
+  jupyter:
+    build:
+      context: ./jupyter
+      dockerfile: Dockerfile
+    container_name: etl_jupyter
+    restart: unless-stopped
+    ports:
+      - "8888:8888"
+    environment:
+      JUPYTER_TOKEN: ${JUPYTER_TOKEN}
+    command: start-notebook.sh --NotebookApp.token=${JUPYTER_TOKEN}
+    volumes:
+      - ./jupyter/notebooks:/home/jovyan/work
+      - ./data/in:/home/jovyan/work/data/in
+      - ./data/out:/home/jovyan/work/data/out
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - etl_net
+
+networks:
+  etl_net:
+
+volumes:
+  postgres_data:
+  cloudbeaver_data:
+  mongodb_data:
+  nifi_state:
+  nifi_conf:
+  nifi_content:
+  nifi_db:
+  nifi_flowfile:
