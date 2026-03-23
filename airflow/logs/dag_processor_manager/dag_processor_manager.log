@@ -167,3 +167,26 @@ File Path                                  PID    Runtime      # DAGs    # Error
 /opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.49s           2026-03-23T09:37:40                      10
 /opt/airflow/dags/etl_alunos.py                                     1           0  0.46s           2026-03-23T09:37:40                      10
 ================================================================================
+[2026-03-23T11:46:26.043+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-23T11:46:26.044+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-23T11:46:26.044+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-23T11:46:26.045+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-23T11:46:26.073+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-23T11:46:26.242+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py    171  0.04s             0           0                                                   0
+/opt/airflow/dags/etl_alunos.py              168  0.05s             0           0                                                   0
+================================================================================
+[2026-03-23T11:46:57.055+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  6.56s           2026-03-23T11:46:32                      24
+/opt/airflow/dags/etl_alunos.py                                     1           0  6.27s           2026-03-23T11:46:32                      24
+================================================================================

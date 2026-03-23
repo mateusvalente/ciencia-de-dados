@@ -13,6 +13,8 @@ Ambiente educacional completo para prática em **Engenharia e Ciência de Dados*
 | 🔧 **pgAdmin** | Interface de administração PostgreSQL |
 | 🔍 **Mongo Express** | Interface de administração MongoDB |
 | 📊 **Jupyter Notebook** | Exploração e análise de dados |
+| ☁️ **Apache Hadoop HDFS** | Sistema de arquivos distribuído |
+| 🎯 **Apache Hue** | Interface visual para Hadoop e HDFS |
 | 📈 **Power BI** | Visualização analítica (externo) |
 
 ## 🎯 Objetivo
@@ -30,16 +32,16 @@ Este projeto oferece um ambiente **realista e educacional** para aprender:
 ## 🏗️ Arquitetura do Ambiente
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                  DOCKER COMPOSE                     │
-├─────────────────┬─────────────────┬────────────────┤
-│  INGESTÃO       │  ORQUESTRAÇÃO   │  ARMAZENAMENTO │
-├─────────────────┼─────────────────┼────────────────┤
-│  • Apache NiFi  │ • Apache Airflow│ • PostgreSQL   │
-│  • Jupyter      │ • DAGs          │ • MongoDB      │
-│                 │                 │ • pgAdmin      │
-│                 │                 │ • Mongo Exp.   │
-└─────────────────┴─────────────────┴────────────────┘
+┌───────────────────────────────────────────────────────────────────┐
+│                      DOCKER COMPOSE                               │
+├──────────────────┬──────────────────┬──────────────┬──────────────┤
+│  INGESTÃO        │  ORQUESTRAÇÃO    │  ARMAZENAMENTO  │ DISTRIBUÍDO  │
+├──────────────────┼──────────────────┼──────────────┼──────────────┤
+│  • Apache NiFi   │ • Apache Airflow │ • PostgreSQL │ • HDFS       │
+│  • Jupyter       │ • DAGs           │ • MongoDB    │ • Hue (UI)   │
+│                  │                  │ • pgAdmin    │              │
+│                  │                  │ • Mongo Exp. │              │
+└──────────────────┴──────────────────┴──────────────┴──────────────┘
 ```
 
 ### Serviços Disponíveis
@@ -51,6 +53,8 @@ Este projeto oferece um ambiente **realista e educacional** para aprender:
 - **Apache NiFi**: Fluxos visuais de dados
 - **Apache Airflow**: Orquestração de DAGs
 - **Jupyter Notebook**: Análise exploratória
+- **Apache Hadoop HDFS**: Sistema de arquivos distribuído
+- **Apache Hue**: Interface visual para gerenciamento de HDFS e análise
 
 ---
 
@@ -151,8 +155,10 @@ docker compose down -v
 | **Mongo Express** | http://localhost:8082 | 8082 |
 | **Apache NiFi** | https://localhost:8443 | 8443 |
 | **Jupyter Notebook** | http://localhost:8888 | 8888 |
+| **Apache Hue** | http://localhost:8889 | 8889 |
 | **PostgreSQL** | localhost | 5432 |
 | **MongoDB** | localhost | 27017 |
+| **HDFS NameNode** | http://localhost:50070 | 50070 |
 
 🔐 **Nota**: O NiFi usa HTTPS em versões atuais da imagem oficial.
 
@@ -194,6 +200,12 @@ Senha: Admin123456789
 ### Jupyter Notebook
 ```
 Token: (definido em .env)
+```
+
+### Apache Hue
+```
+Usuário: admin
+Senha: admin
 ```
 
 ---

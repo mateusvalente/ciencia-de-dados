@@ -65,31 +65,79 @@ services:
     networks:
       - etl_net
 
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: etl_namenode
+    restart: unless-stopped
+    environment:
+      CLUSTER_NAME: etl-hdfs
+      CORE_CONF_fs_defaultFS: hdfs://namenode:9000
+    ports:
+      - "9870:9870"
+      - "9000:9000"
+    volumes:
+      - namenode_data:/hadoop/dfs/name
+    networks:
+      - etl_net
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: etl_datanode
+    restart: unless-stopped
+    environment:
+      CORE_CONF_fs_defaultFS: hdfs://namenode:9000
+      SERVICE_PRECONDITION: namenode:9870
+    depends_on:
+      - namenode
+    ports:
+      - "9864:9864"
+    volumes:
+      - datanode_data:/hadoop/dfs/data
+    networks:
+      - etl_net
+
+  hue:
+    image: gethue/hue:latest
+    container_name: etl_hue
+    restart: unless-stopped
+    depends_on:
+      - namenode
+      - datanode
+    ports:
+      - "8889:8888"
+    networks:
+      - etl_net
+
   nifi:
-      build:
-        context: ./nifi
-        dockerfile: Dockerfile
-      container_name: etl_nifi
-      restart: unless-stopped
-      environment:
-        SINGLE_USER_CREDENTIALS_USERNAME: ${NIFI_USER}
-        SINGLE_USER_CREDENTIALS_PASSWORD: ${NIFI_PASSWORD}
-        NIFI_WEB_HTTPS_PORT: 8443
-      ports:
-        - "8443:8443"
-      volumes:
-        - nifi_state:/opt/nifi/nifi-current/state
-        - nifi_conf:/opt/nifi/nifi-current/conf
-        - nifi_content:/opt/nifi/nifi-current/content_repository
-        - nifi_db:/opt/nifi/nifi-current/database_repository
-        - nifi_flowfile:/opt/nifi/nifi-current/flowfile_repository
-        - ./data/in:/data/in
-        - ./data/out:/data/out
-      depends_on:
-        postgres:
-          condition: service_healthy
-      networks:
-        - etl_net
+    build:
+      context: ./nifi
+      dockerfile: Dockerfile
+    container_name: etl_nifi
+    restart: unless-stopped
+    environment:
+      SINGLE_USER_CREDENTIALS_USERNAME: ${NIFI_USER}
+      SINGLE_USER_CREDENTIALS_PASSWORD: ${NIFI_PASSWORD}
+      NIFI_WEB_HTTPS_PORT: 8443
+    ports:
+      - "8443:8443"
+    volumes:
+      - nifi_state:/opt/nifi/nifi-current/state
+      - nifi_conf:/opt/nifi/nifi-current/conf
+      - nifi_content:/opt/nifi/nifi-current/content_repository
+      - nifi_db:/opt/nifi/nifi-current/database_repository
+      - nifi_flowfile:/opt/nifi/nifi-current/flowfile_repository
+      - ./data/in:/data/in
+      - ./data/out:/data/out
+      - ./hadoop-config:/opt/hadoop-config
+    depends_on:
+      postgres:
+        condition: service_healthy
+      namenode:
+        condition: service_started
+      datanode:
+        condition: service_started
+    networks:
+      - etl_net
 
   airflow-init:
     build:
@@ -211,10 +259,11 @@ networks:
 
 volumes:
   postgres_data:
-  cloudbeaver_data:
   mongodb_data:
   nifi_state:
   nifi_conf:
   nifi_content:
   nifi_db:
   nifi_flowfile:
+  namenode_data:
+  datanode_data:
