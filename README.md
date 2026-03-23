@@ -35,7 +35,7 @@ Este projeto oferece um ambiente **realista e educacional** para aprender:
 ┌───────────────────────────────────────────────────────────────────┐
 │                      DOCKER COMPOSE                               │
 ├──────────────────┬──────────────────┬──────────────┬──────────────┤
-│  INGESTÃO        │  ORQUESTRAÇÃO    │  ARMAZENAMENTO  │ DISTRIBUÍDO  │
+│  INGESTÃO        │  ORQUESTRAÇÃO    │ARMAZENAMENTO │ DISTRIBUÍDO  │
 ├──────────────────┼──────────────────┼──────────────┼──────────────┤
 │  • Apache NiFi   │ • Apache Airflow │ • PostgreSQL │ • HDFS       │
 │  • Jupyter       │ • DAGs           │ • MongoDB    │ • Hue (UI)   │
@@ -66,6 +66,9 @@ pratica-ciencia-dados-2/
 ├── README.md               # Este arquivo
 ├── .env                    # Variáveis de ambiente
 │
+├── hadoop-config/                # sistema de arquivos distribuido
+│   ├── core-site.xml
+│   ├── hdfs-site.xml
 ├── airflow/                # Serviço de orquestração
 │   ├── Dockerfile
 │   ├── requirements.txt
@@ -86,6 +89,10 @@ pratica-ciencia-dados-2/
 ├── postgres/               # Banco relacional
 │   └── init/
 │       └── 01-init.sql
+│
+├── hadoop-config/          # Configurações Hadoop/HDFS
+│   ├── core-site.xml
+│   └── hdfs-site.xml
 │
 └── data/                   # Dados do projeto
     ├── in/                 # Dados de entrada
@@ -337,7 +344,14 @@ docker compose logs jupyter | grep token
 # Visualize timeline de execuções
 ```
 
-### 4. Análise em Power BI
+### 4. Gerenciamento de HDFS com Hue
+```bash
+# Acesse http://localhost:8889
+# Login: admin / admin
+# Navegue por arquivos, crie diretórios e gerencie dados distribuídos
+```
+
+### 5. Análise em Power BI
 ```
 # Conecte ao PostgreSQL
 Host: localhost
@@ -356,6 +370,8 @@ Password: etl_pass
 - [Documentação PostgreSQL](https://www.postgresql.org/docs/)
 - [Documentação MongoDB](https://docs.mongodb.com/)
 - [Jupyter Documentation](https://jupyter.org/documentation)
+- [Documentação Apache Hadoop HDFS](https://hadoop.apache.org/docs/)
+- [Documentação Apache Hue](https://gethue.com/)
 
 ---
 
