@@ -72,6 +72,9 @@ services:
     environment:
       CLUSTER_NAME: etl-hdfs
       CORE_CONF_fs_defaultFS: hdfs://namenode:9000
+      CORE_CONF_hadoop_proxyuser_hue_hosts: "*"
+      CORE_CONF_hadoop_proxyuser_hue_groups: "*"
+      CORE_CONF_hadoop_proxyuser_hue_users: "*"
     ports:
       - "9870:9870"
       - "9000:9000"
@@ -87,6 +90,9 @@ services:
     environment:
       CORE_CONF_fs_defaultFS: hdfs://namenode:9000
       SERVICE_PRECONDITION: namenode:9870
+      CORE_CONF_hadoop_proxyuser_hue_hosts: "*"
+      CORE_CONF_hadoop_proxyuser_hue_groups: "*"
+      CORE_CONF_hadoop_proxyuser_hue_users: "*"
     depends_on:
       - namenode
     ports:
@@ -96,15 +102,40 @@ services:
     networks:
       - etl_net
 
+  hdfs-init:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: etl_hdfs_init
+    depends_on:
+      - namenode
+      - datanode
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        echo "Aguardando o NameNode iniciar e sair do safemode..."
+        sleep 15
+        hdfs dfsadmin -fs hdfs://namenode:9000 -safemode wait
+        hdfs dfs -fs hdfs://namenode:9000 -mkdir -p /user/admin
+        hdfs dfs -fs hdfs://namenode:9000 -mkdir -p /praticas
+        hdfs dfs -fs hdfs://namenode:9000 -chown -R admin:supergroup /user/admin
+        hdfs dfs -fs hdfs://namenode:9000 -chmod -R 777 /user
+        hdfs dfs -fs hdfs://namenode:9000 -chmod -R 777 /praticas
+        echo "Diretorios criados com sucesso!"
+    restart: "no"
+    networks:
+      - etl_net
+
   hue:
     image: gethue/hue:latest
     container_name: etl_hue
     restart: unless-stopped
     depends_on:
-      - namenode
-      - datanode
+      hdfs-init:
+        condition: service_completed_successfully
     ports:
       - "8889:8888"
+    volumes:
+      - ./hue/hue.ini:/usr/share/hue/desktop/conf/hue.ini
     networks:
       - etl_net
 
@@ -132,10 +163,8 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-      namenode:
-        condition: service_started
-      datanode:
-        condition: service_started
+      hdfs-init:
+        condition: service_completed_successfully
     networks:
       - etl_net
 

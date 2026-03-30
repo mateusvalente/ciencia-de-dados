@@ -4233,3 +4233,962 @@ File Path                                  PID    Runtime      # DAGs    # Error
 [2026-03-30T17:55:51.537+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
 [2026-03-30T17:55:51.557+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
 [2026-03-30T17:56:00.689+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-30T17:58:42.181+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-30T17:58:42.182+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-30T17:58:42.183+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-30T17:58:42.184+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T17:58:42.216+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T17:58:42.518+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py    172  0.09s             0           0                                                   0
+/opt/airflow/dags/etl_alunos.py              169  0.12s             0           0                                                   0
+================================================================================
+[2026-03-30T17:59:12.692+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  11.20s          2026-03-30T17:58:53                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  11.18s          2026-03-30T17:58:53                      10
+================================================================================
+[2026-03-30T17:59:43.372+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  1.36s           2026-03-30T17:59:25                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  1.35s           2026-03-30T17:59:25                      10
+================================================================================
+[2026-03-30T18:00:14.207+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.53s           2026-03-30T17:59:56                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.53s           2026-03-30T17:59:56                      10
+================================================================================
+[2026-03-30T18:00:44.955+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:00:26                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:00:26                      10
+================================================================================
+[2026-03-30T18:01:15.667+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.46s           2026-03-30T18:00:57                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.45s           2026-03-30T18:00:57                      10
+================================================================================
+[2026-03-30T18:01:46.426+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.46s           2026-03-30T18:01:28                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.44s           2026-03-30T18:01:28                      10
+================================================================================
+[2026-03-30T18:02:17.144+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.50s           2026-03-30T18:01:59                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.48s           2026-03-30T18:01:59                      10
+================================================================================
+[2026-03-30T18:02:47.995+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.61s           2026-03-30T18:02:29                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.59s           2026-03-30T18:02:29                      10
+================================================================================
+[2026-03-30T18:03:18.817+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.55s           2026-03-30T18:03:00                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.54s           2026-03-30T18:03:00                      10
+================================================================================
+[2026-03-30T18:03:42.539+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:03:42.562+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:03:49.678+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.49s           2026-03-30T18:03:31                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.48s           2026-03-30T18:03:31                      10
+================================================================================
+[2026-03-30T18:04:19.932+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.46s           2026-03-30T18:04:02                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.45s           2026-03-30T18:04:02                      10
+================================================================================
+[2026-03-30T18:04:50.196+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.54s           2026-03-30T18:04:33                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.53s           2026-03-30T18:04:33                      10
+================================================================================
+[2026-03-30T18:05:20.449+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.55s           2026-03-30T18:05:03                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.54s           2026-03-30T18:05:03                      10
+================================================================================
+[2026-03-30T18:05:50.715+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:05:34                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:05:34                      10
+================================================================================
+[2026-03-30T18:06:21.672+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.62s           2026-03-30T18:06:05                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.62s           2026-03-30T18:06:05                      10
+================================================================================
+[2026-03-30T18:06:52.429+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:06:36                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:06:36                      10
+================================================================================
+[2026-03-30T18:07:23.247+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.58s           2026-03-30T18:07:07                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.56s           2026-03-30T18:07:07                      10
+================================================================================
+[2026-03-30T18:07:54.158+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.65s           2026-03-30T18:07:38                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.63s           2026-03-30T18:07:37                      10
+================================================================================
+[2026-03-30T18:08:25.011+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.57s           2026-03-30T18:08:08                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.53s           2026-03-30T18:08:08                      10
+================================================================================
+[2026-03-30T18:08:42.698+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:08:42.736+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:08:55.939+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.55s           2026-03-30T18:08:39                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.53s           2026-03-30T18:08:39                      10
+================================================================================
+[2026-03-30T18:09:26.748+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.50s           2026-03-30T18:09:10                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.49s           2026-03-30T18:09:10                      10
+================================================================================
+[2026-03-30T18:09:57.482+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:09:41                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.46s           2026-03-30T18:09:41                      10
+================================================================================
+[2026-03-30T18:10:28.223+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.44s           2026-03-30T18:10:12                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.43s           2026-03-30T18:10:12                      10
+================================================================================
+[2026-03-30T18:10:58.972+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.46s           2026-03-30T18:10:42                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.44s           2026-03-30T18:10:42                      10
+================================================================================
+[2026-03-30T18:11:29.729+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:11:13                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:11:13                      10
+================================================================================
+[2026-03-30T18:12:00.745+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.77s           2026-03-30T18:11:44                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.76s           2026-03-30T18:11:44                      10
+================================================================================
+[2026-03-30T18:12:31.591+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.55s           2026-03-30T18:12:15                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.54s           2026-03-30T18:12:15                      10
+================================================================================
+[2026-03-30T18:13:02.330+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.52s           2026-03-30T18:12:46                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.50s           2026-03-30T18:12:46                      10
+================================================================================
+[2026-03-30T18:13:33.087+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:13:16                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:13:16                      10
+================================================================================
+[2026-03-30T18:13:43.166+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:13:43.197+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:14:03.877+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:13:47                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.48s           2026-03-30T18:13:47                      10
+================================================================================
+[2026-03-30T18:14:34.599+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.50s           2026-03-30T18:14:18                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.49s           2026-03-30T18:14:18                      10
+================================================================================
+[2026-03-30T18:15:05.208+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.36s           2026-03-30T18:14:49                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.35s           2026-03-30T18:14:49                      10
+================================================================================
+[2026-03-30T18:15:35.789+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.33s           2026-03-30T18:15:19                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.33s           2026-03-30T18:15:19                      10
+================================================================================
+[2026-03-30T18:16:06.640+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.56s           2026-03-30T18:15:50                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.56s           2026-03-30T18:15:50                      10
+================================================================================
+[2026-03-30T18:16:28.779+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-30T18:17:50.534+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-30T18:17:50.535+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-30T18:17:50.537+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-30T18:17:50.537+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:17:50.585+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:17:50.913+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py    171  0.09s             0           0                                                   0
+/opt/airflow/dags/etl_alunos.py              168  0.12s             0           0                                                   0
+================================================================================
+[2026-03-30T18:18:21.236+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  3.67s           2026-03-30T18:17:54                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  3.65s           2026-03-30T18:17:54                      10
+================================================================================
+[2026-03-30T18:18:51.314+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  2.09s           2026-03-30T18:18:28                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  2.06s           2026-03-30T18:18:28                      10
+================================================================================
+[2026-03-30T18:19:21.581+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.66s           2026-03-30T18:18:59                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.65s           2026-03-30T18:18:59                      10
+================================================================================
+[2026-03-30T18:19:52.053+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.55s           2026-03-30T18:19:29                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.53s           2026-03-30T18:19:29                      10
+================================================================================
+[2026-03-30T18:20:22.828+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.49s           2026-03-30T18:20:00                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.48s           2026-03-30T18:20:00                      10
+================================================================================
+[2026-03-30T18:20:37.563+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-30T18:22:36.597+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-30T18:22:36.599+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-30T18:22:36.600+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-30T18:22:36.601+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:22:36.654+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:22:37.012+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py    171  0.10s             0           0                                                   0
+/opt/airflow/dags/etl_alunos.py              168  0.12s             0           0                                                   0
+================================================================================
+[2026-03-30T18:23:07.849+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  9.89s           2026-03-30T18:22:46                      24
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  9.86s           2026-03-30T18:22:46                      24
+================================================================================
+[2026-03-30T18:23:38.239+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  1.91s           2026-03-30T18:23:19                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  1.90s           2026-03-30T18:23:19                      10
+================================================================================
+[2026-03-30T18:24:09.041+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.55s           2026-03-30T18:23:49                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.52s           2026-03-30T18:23:49                      10
+================================================================================
+[2026-03-30T18:24:39.785+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:24:20                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:24:20                      10
+================================================================================
+[2026-03-30T18:25:10.533+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.49s           2026-03-30T18:24:51                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.48s           2026-03-30T18:24:51                      10
+================================================================================
+[2026-03-30T18:25:41.316+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.57s           2026-03-30T18:25:22                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.55s           2026-03-30T18:25:22                      10
+================================================================================
+[2026-03-30T18:26:12.121+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.56s           2026-03-30T18:25:53                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.53s           2026-03-30T18:25:52                      10
+================================================================================
+[2026-03-30T18:26:42.401+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.67s           2026-03-30T18:26:23                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.67s           2026-03-30T18:26:23                      10
+================================================================================
+[2026-03-30T18:27:12.861+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.61s           2026-03-30T18:26:54                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.60s           2026-03-30T18:26:54                      10
+================================================================================
+[2026-03-30T18:27:36.659+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:27:36.698+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:27:43.755+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.59s           2026-03-30T18:27:25                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.58s           2026-03-30T18:27:25                      10
+================================================================================
+[2026-03-30T18:28:14.462+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.46s           2026-03-30T18:27:56                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.46s           2026-03-30T18:27:56                      10
+================================================================================
+[2026-03-30T18:28:45.212+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.51s           2026-03-30T18:28:27                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.50s           2026-03-30T18:28:27                      10
+================================================================================
+[2026-03-30T18:29:15.953+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.47s           2026-03-30T18:28:57                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.46s           2026-03-30T18:28:57                      10
+================================================================================
+[2026-03-30T18:29:46.662+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.47s           2026-03-30T18:29:28                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:29:28                      10
+================================================================================
+[2026-03-30T18:30:17.474+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.52s           2026-03-30T18:29:59                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.51s           2026-03-30T18:29:59                      10
+================================================================================
+[2026-03-30T18:30:48.253+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.49s           2026-03-30T18:30:30                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:30:30                      10
+================================================================================
+[2026-03-30T18:31:18.453+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.92s           2026-03-30T18:31:01                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.91s           2026-03-30T18:31:01                      10
+================================================================================
+[2026-03-30T18:31:49.239+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.58s           2026-03-30T18:31:32                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.56s           2026-03-30T18:31:32                      10
+================================================================================
+[2026-03-30T18:32:20.020+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.53s           2026-03-30T18:32:02                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.51s           2026-03-30T18:32:02                      10
+================================================================================
+[2026-03-30T18:32:36.669+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:32:36.686+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:32:50.776+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:32:33                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:32:33                      10
+================================================================================
+[2026-03-30T18:33:21.504+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.49s           2026-03-30T18:33:04                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:33:04                      10
+================================================================================
+[2026-03-30T18:33:52.299+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.55s           2026-03-30T18:33:35                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.53s           2026-03-30T18:33:35                      10
+================================================================================
+[2026-03-30T18:34:23.038+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.51s           2026-03-30T18:34:05                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.49s           2026-03-30T18:34:05                      10
+================================================================================
+[2026-03-30T18:34:53.846+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:34:36                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:34:36                      10
+================================================================================
+[2026-03-30T18:35:24.566+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:35:07                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.46s           2026-03-30T18:35:07                      10
+================================================================================
+[2026-03-30T18:35:55.365+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.45s           2026-03-30T18:35:38                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.44s           2026-03-30T18:35:38                      10
+================================================================================
+[2026-03-30T18:36:26.099+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.47s           2026-03-30T18:36:08                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:36:08                      10
+================================================================================
+[2026-03-30T18:36:56.843+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.50s           2026-03-30T18:36:39                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.48s           2026-03-30T18:36:39                      10
+================================================================================
+[2026-03-30T18:37:27.692+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.62s           2026-03-30T18:37:10                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.61s           2026-03-30T18:37:10                      10
+================================================================================
+[2026-03-30T18:37:36.735+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:37:36.753+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:37:58.469+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.54s           2026-03-30T18:37:41                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.53s           2026-03-30T18:37:41                      10
+================================================================================
+[2026-03-30T18:38:28.987+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  1.89s           2026-03-30T18:38:13                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  1.62s           2026-03-30T18:38:13                      10
+================================================================================
+[2026-03-30T18:38:59.630+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.36s           2026-03-30T18:38:44                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.35s           2026-03-30T18:38:44                      10
+================================================================================
+[2026-03-30T18:39:30.321+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.44s           2026-03-30T18:39:15                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.42s           2026-03-30T18:39:15                      10
+================================================================================
+[2026-03-30T18:39:56.158+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-30T18:42:06.062+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-30T18:42:06.064+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-30T18:42:06.064+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-30T18:42:06.065+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:42:06.094+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:42:06.214+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py    171  0.03s             0           0                                                   0
+/opt/airflow/dags/etl_alunos.py              168  0.05s             0           0                                                   0
+================================================================================
+[2026-03-30T18:42:37.359+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  2.01s           2026-03-30T18:42:08                      24
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  2.00s           2026-03-30T18:42:08                      24
+================================================================================
+[2026-03-30T18:43:08.760+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  1.04s           2026-03-30T18:42:40                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  1.03s           2026-03-30T18:42:40                      10
+================================================================================
+[2026-03-30T18:43:38.982+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  1.70s           2026-03-30T18:43:12                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  1.69s           2026-03-30T18:43:12                      10
+================================================================================
+[2026-03-30T18:44:09.807+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.56s           2026-03-30T18:43:43                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.53s           2026-03-30T18:43:43                      10
+================================================================================
+[2026-03-30T18:44:40.598+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.52s           2026-03-30T18:44:14                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.51s           2026-03-30T18:44:14                      10
+================================================================================
+[2026-03-30T18:45:11.390+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.54s           2026-03-30T18:44:45                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.54s           2026-03-30T18:44:45                      10
+================================================================================
+[2026-03-30T18:45:42.153+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.50s           2026-03-30T18:45:15                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.49s           2026-03-30T18:45:15                      10
+================================================================================
+[2026-03-30T18:46:12.897+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.46s           2026-03-30T18:45:46                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.45s           2026-03-30T18:45:46                      10
+================================================================================
+[2026-03-30T18:46:42.999+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.86s           2026-03-30T18:46:17                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.84s           2026-03-30T18:46:17                      10
+================================================================================
+[2026-03-30T18:47:06.777+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:47:06.802+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:47:13.853+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.60s           2026-03-30T18:46:48                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.58s           2026-03-30T18:46:48                      10
+================================================================================
+[2026-03-30T18:47:44.563+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:47:19                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:47:19                      10
+================================================================================
+[2026-03-30T18:48:15.311+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.44s           2026-03-30T18:47:50                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.43s           2026-03-30T18:47:50                      10
+================================================================================
+[2026-03-30T18:48:46.067+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.48s           2026-03-30T18:48:20                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:48:20                      10
+================================================================================
+[2026-03-30T18:49:16.795+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.46s           2026-03-30T18:48:51                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.44s           2026-03-30T18:48:51                      10
+================================================================================
+[2026-03-30T18:49:47.501+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.46s           2026-03-30T18:49:22                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.44s           2026-03-30T18:49:22                      10
+================================================================================
+[2026-03-30T18:50:18.300+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.50s           2026-03-30T18:49:53                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.49s           2026-03-30T18:49:53                      10
+================================================================================
+[2026-03-30T18:50:49.090+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.51s           2026-03-30T18:50:23                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.51s           2026-03-30T18:50:23                      10
+================================================================================
+[2026-03-30T18:51:19.878+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.49s           2026-03-30T18:50:54                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:50:54                      10
+================================================================================
+[2026-03-30T18:51:33.575+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-30T18:52:50.393+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-30T18:52:50.394+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-30T18:52:50.395+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-30T18:52:50.395+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:52:50.416+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:52:50.499+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py    171  0.02s             0           0                                                   0
+/opt/airflow/dags/etl_alunos.py              168  0.03s             0           0                                                   0
+================================================================================
+[2026-03-30T18:53:20.722+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  1.59s           2026-03-30T18:52:52                      24
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  1.58s           2026-03-30T18:52:52                      24
+================================================================================
+[2026-03-30T18:53:45.423+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-30T18:54:11.320+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2026-03-30T18:54:11.321+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2026-03-30T18:54:11.322+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-30T18:54:11.322+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-03-30T18:54:11.349+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2026-03-30T18:54:11.433+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py    172  0.02s             0           0                                                   0
+/opt/airflow/dags/etl_alunos.py              169  0.03s             0           0                                                   0
+================================================================================
+[2026-03-30T18:54:41.708+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/etl_alunos.py                                     1           0  1.18s           2026-03-30T18:54:12                      10
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  1.17s           2026-03-30T18:54:12                      10
+================================================================================
+[2026-03-30T18:55:12.654+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.62s           2026-03-30T18:54:43                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.62s           2026-03-30T18:54:43                      10
+================================================================================
+[2026-03-30T18:55:43.475+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.51s           2026-03-30T18:55:14                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.50s           2026-03-30T18:55:14                      10
+================================================================================
+[2026-03-30T18:56:14.250+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/estatisticas_mongodb.py                           1           0  0.49s           2026-03-30T18:55:44                      10
+/opt/airflow/dags/etl_alunos.py                                     1           0  0.47s           2026-03-30T18:55:44                      10
+================================================================================
+[2026-03-30T18:56:26.989+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
