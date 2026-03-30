@@ -1,0 +1,217 @@
+[2026-03-30T17:07:38.353+0000] {processor.py:186} INFO - Started process (PID=171) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:07:38.363+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:07:38.383+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:07:38.382+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:07:40.985+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:07:41.040+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:07:41.040+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:07:41.053+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:07:41.053+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:07:41.085+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 2.787 seconds
+[2026-03-30T17:08:11.488+0000] {processor.py:186} INFO - Started process (PID=183) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:08:11.490+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:08:11.500+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:08:11.499+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:08:12.303+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:08:12.332+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:08:12.331+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:08:12.344+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:08:12.344+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:08:12.357+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.878 seconds
+[2026-03-30T17:08:42.653+0000] {processor.py:186} INFO - Started process (PID=195) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:08:42.654+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:08:42.656+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:08:42.656+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:08:43.032+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:08:43.052+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:08:43.052+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:08:43.063+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:08:43.062+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:08:43.076+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.430 seconds
+[2026-03-30T17:09:13.339+0000] {processor.py:186} INFO - Started process (PID=207) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:09:13.340+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:09:13.342+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:09:13.342+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:09:13.745+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:09:13.770+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:09:13.769+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:09:13.780+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:09:13.780+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:09:13.793+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.458 seconds
+[2026-03-30T17:09:44.060+0000] {processor.py:186} INFO - Started process (PID=219) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:09:44.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:09:44.063+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:09:44.063+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:09:44.667+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:09:44.688+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:09:44.687+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:09:44.697+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:09:44.696+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:09:44.709+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.656 seconds
+[2026-03-30T17:10:15.010+0000] {processor.py:186} INFO - Started process (PID=231) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:10:15.011+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:10:15.013+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:10:15.013+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:10:15.436+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:10:15.455+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:10:15.455+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:10:15.463+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:10:15.463+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:10:15.474+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.469 seconds
+[2026-03-30T17:10:45.740+0000] {processor.py:186} INFO - Started process (PID=243) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:10:45.741+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:10:45.745+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:10:45.744+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:10:46.221+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:10:46.278+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:10:46.277+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:10:46.292+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:10:46.292+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:10:46.308+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.575 seconds
+[2026-03-30T17:11:16.609+0000] {processor.py:186} INFO - Started process (PID=255) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:11:16.610+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:11:16.612+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:11:16.612+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:11:17.149+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:11:17.190+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:11:17.189+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:11:17.201+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:11:17.200+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:11:17.215+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.612 seconds
+[2026-03-30T17:11:47.497+0000] {processor.py:186} INFO - Started process (PID=267) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:11:47.498+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:11:47.501+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:11:47.500+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:11:47.964+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:11:48.001+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:11:48.000+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:11:48.020+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:11:48.020+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:11:48.039+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.547 seconds
+[2026-03-30T17:12:18.361+0000] {processor.py:186} INFO - Started process (PID=279) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:12:18.362+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:12:18.365+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:12:18.364+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:12:18.823+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:12:18.854+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:12:18.854+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:12:18.864+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:12:18.864+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:12:18.877+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.520 seconds
+[2026-03-30T17:12:49.206+0000] {processor.py:186} INFO - Started process (PID=291) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:12:49.207+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:12:49.209+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:12:49.209+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:12:49.644+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:12:49.672+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:12:49.672+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:12:49.683+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:12:49.683+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:12:49.700+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.498 seconds
+[2026-03-30T17:13:19.982+0000] {processor.py:186} INFO - Started process (PID=303) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:13:19.983+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:13:19.986+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:13:19.985+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:13:20.619+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:13:20.657+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:13:20.656+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:13:20.680+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:13:20.679+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:13:20.697+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.721 seconds
+[2026-03-30T17:13:50.994+0000] {processor.py:186} INFO - Started process (PID=315) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:13:50.995+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:13:50.996+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:13:50.996+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:13:51.423+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:13:51.441+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:13:51.440+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:13:51.449+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:13:51.448+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:13:51.460+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.471 seconds
+[2026-03-30T17:14:21.740+0000] {processor.py:186} INFO - Started process (PID=327) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:14:21.741+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:14:21.743+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:14:21.743+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:14:22.218+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:14:22.242+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:14:22.242+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:14:22.256+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:14:22.256+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:14:22.275+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.540 seconds
+[2026-03-30T17:14:52.578+0000] {processor.py:186} INFO - Started process (PID=339) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:14:52.579+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:14:52.581+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:14:52.581+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:14:52.993+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:14:53.013+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:14:53.013+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:14:53.023+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:14:53.023+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:14:53.036+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.464 seconds
+[2026-03-30T17:15:23.341+0000] {processor.py:186} INFO - Started process (PID=351) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:15:23.342+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:15:23.345+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:15:23.345+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:15:23.763+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:15:23.784+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:15:23.784+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:15:23.794+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:15:23.794+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:15:23.808+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.473 seconds
+[2026-03-30T17:15:54.120+0000] {processor.py:186} INFO - Started process (PID=363) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:15:54.121+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:15:54.124+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:15:54.123+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:15:54.566+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:15:54.588+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:15:54.587+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:15:54.597+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:15:54.597+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:15:54.611+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.497 seconds
+[2026-03-30T17:16:24.915+0000] {processor.py:186} INFO - Started process (PID=375) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:16:24.916+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:16:24.918+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:16:24.918+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:16:25.324+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:16:25.365+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:16:25.363+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:16:25.379+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:16:25.379+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:16:25.393+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.483 seconds
+[2026-03-30T17:16:55.674+0000] {processor.py:186} INFO - Started process (PID=387) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:16:55.675+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:16:55.677+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:16:55.677+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:16:56.146+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:16:56.166+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:16:56.166+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:16:56.176+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:16:56.176+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:16:56.189+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.520 seconds
+[2026-03-30T17:17:26.504+0000] {processor.py:186} INFO - Started process (PID=399) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:17:26.505+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:17:26.507+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:17:26.507+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:17:26.893+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:17:26.913+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:17:26.912+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:17:26.921+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:17:26.921+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:17:26.932+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.433 seconds
+[2026-03-30T17:17:57.264+0000] {processor.py:186} INFO - Started process (PID=411) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:17:57.265+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:17:57.267+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:17:57.267+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:17:57.643+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:17:57.664+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:17:57.664+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:17:57.676+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:17:57.676+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:17:57.690+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.430 seconds
+[2026-03-30T17:18:28.034+0000] {processor.py:186} INFO - Started process (PID=423) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:18:28.035+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:18:28.038+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:18:28.037+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:18:28.508+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:18:28.524+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:18:28.523+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:18:28.531+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:18:28.531+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:18:28.543+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.514 seconds
+[2026-03-30T17:18:58.776+0000] {processor.py:186} INFO - Started process (PID=435) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:18:58.778+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:18:58.780+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:18:58.780+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:18:59.304+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:18:59.324+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:18:59.324+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:18:59.336+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:18:59.336+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:18:59.356+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.586 seconds
+[2026-03-30T17:19:29.669+0000] {processor.py:186} INFO - Started process (PID=447) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:19:29.670+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:19:29.672+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:19:29.671+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:19:30.072+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:19:30.090+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:19:30.090+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:19:30.101+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:19:30.101+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:19:30.116+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.452 seconds
+[2026-03-30T17:20:00.411+0000] {processor.py:186} INFO - Started process (PID=459) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:20:00.412+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:20:00.414+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:20:00.414+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:20:00.911+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:20:00.934+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:20:00.933+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:20:00.945+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:20:00.945+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:20:00.959+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.553 seconds
+[2026-03-30T17:20:31.241+0000] {processor.py:186} INFO - Started process (PID=471) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:20:31.242+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:20:31.245+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:20:31.245+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:20:31.699+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:20:31.720+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:20:31.720+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:20:31.728+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:20:31.728+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:20:31.741+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.506 seconds
+[2026-03-30T17:21:02.054+0000] {processor.py:186} INFO - Started process (PID=483) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:21:02.055+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:21:02.057+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:21:02.057+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:21:02.482+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:21:02.501+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:21:02.501+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:21:02.511+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:21:02.511+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:21:02.526+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.478 seconds
+[2026-03-30T17:21:32.826+0000] {processor.py:186} INFO - Started process (PID=495) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:21:32.827+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:21:32.831+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:21:32.831+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:21:33.429+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:21:33.479+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:21:33.479+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:21:33.494+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:21:33.494+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:21:33.507+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.690 seconds
+[2026-03-30T17:22:03.782+0000] {processor.py:186} INFO - Started process (PID=507) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:22:03.783+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:22:03.785+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:22:03.785+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:22:04.195+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:22:04.214+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:22:04.214+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:22:04.224+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:22:04.224+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:22:04.236+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.461 seconds
+[2026-03-30T17:22:34.495+0000] {processor.py:186} INFO - Started process (PID=519) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:22:34.497+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:22:34.499+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:22:34.498+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:22:34.944+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:22:34.962+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:22:34.961+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:22:34.970+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:22:34.969+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:22:34.981+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.491 seconds
+[2026-03-30T17:23:05.303+0000] {processor.py:186} INFO - Started process (PID=531) to work on /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:23:05.304+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/estatisticas_mongodb.py for tasks to queue
+[2026-03-30T17:23:05.306+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:23:05.306+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:23:05.689+0000] {processor.py:925} INFO - DAG(s) 'estatisticas_mongodb' retrieved from /opt/airflow/dags/estatisticas_mongodb.py
+[2026-03-30T17:23:05.709+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:23:05.708+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2026-03-30T17:23:05.717+0000] {logging_mixin.py:190} INFO - [2026-03-30T17:23:05.717+0000] {dag.py:4138} INFO - Setting next_dagrun for estatisticas_mongodb to None, run_after=None
+[2026-03-30T17:23:05.730+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/estatisticas_mongodb.py took 0.433 seconds
